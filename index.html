@@ -2,17 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NLRP | Official Portal</title>
+    <title>NLRP | Home</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background: #050505; color: white; font-family: 'Inter', sans-serif; }
-        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .glow { text-shadow: 0 0 20px rgba(59, 130, 246, 0.5); }
+        body { background: radial-gradient(circle at center, #0a0f1d 0%, #020202 100%); color: white; font-family: 'Inter', sans-serif; min-height: 100vh; overflow-x: hidden; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .hero-glow { text-shadow: 0 0 30px rgba(59, 130, 246, 0.6); }
     </style>
 </head>
 <body>
-    <nav class="fixed w-full z-50 p-6 flex justify-center">
-        <div class="glass px-8 py-4 rounded-full flex gap-8 text-[10px] font-black uppercase tracking-[0.2em]">
-            <a href="index.html" class="text-blue-500">Home</a>
+    <nav class="fixed w-full z-50 p-8 flex justify-center">
+        <div class="glass px-10 py-5 rounded-full flex gap-10 text-[11px] font-black uppercase tracking-[0.3em]">
+            <a href="index.html" class="text-blue-500 border-b-2 border-blue-500">Home</a>
             <a href="depts.html" class="hover:text-blue-400 transition">Departments</a>
-            <a href="team.html
+            <a href="team.html" class="hover:text-blue-400 transition">Team</a>
+            <a href="games.html" class="hover:text-blue-400 transition">Games</a>
+        </div>
+    </nav>
+
+    <section class="h-screen flex flex-col items-center justify-center text-center px-6">
+        <div class="absolute top-0 left-0 w-full h-full opacity-20 pointer-events-none" style="background-image: url('image_257eb9.jpg'); background-size: cover; background-position: center; filter: grayscale(100%);"></div>
+        <h1 class="text-7xl md:text-9xl font-black italic uppercase hero-glow mb-2">NORTH <span class="text-blue-600">LONDON</span></h1>
+        <p class="text-blue-400 tracking-[0.8em] text-[12px] uppercase font-bold mb-12">Specialist Operations Command</p>
+        <button onclick="navigator.clipboard.writeText('uknlrp')" class="glass px-12 py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all duration-500 shadow-2xl">
+            Server Code: <span class="text-blue-500">uknlrp</span>
+        </button>
+    </section>
+</body>
+</html>
